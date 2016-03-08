@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<cinder>
+	<block
+		name="Protocol"
+		id="protocol.bantherewind.com"
+		author="Stephen Schieberl"
+		summary="Implementation of various network protocols for Cinder."
+		git="https://github.com/BanTheRewind/Cinder-Protocol.git"
+		url="https://github.com/BanTheRewind/Cinder-Protocol"
+	>	
+		<requires>asio.bantherewind.com</requires>
+		<supports os="macosx" />
+		<supports os="msw" />	
+		
+		<headerPattern>src/*.h</headerPattern>
+		<sourcePattern>src/*.cpp</sourcePattern>
+		
+		<platform os="msw">
+			<includePath>src/</includePath>	
+		</platform>
+	</block>
+</cinder>
